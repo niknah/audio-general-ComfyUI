@@ -1,7 +1,7 @@
 [project]
 name = "audio-general-ComfyUI"
 description = "General audio nodes.  Mix, Bass/Treble, Concatenate, Pitch, Add/remove silence, Speed"
-version = "1.0.1"
+version = "1.0.2"
 license = {text = "MIT License"}
 
 [project.urls]

@@ -28,7 +28,7 @@ class AudioSpeed:
             },
             "optional": {
                 "speed_type": (["torch-time-stretch", "TDHS"], {
-                    "default": "torch-time-stretch",
+                    "default": "TDHS",
                     "tooltip": "TDHS - Time-domain harmonic scaling. torch-time-stretch - torchaudio.transforms.TimeStretch.",  # noqa: E501
                 }),
             },
@@ -44,7 +44,7 @@ class AudioSpeed:
 
 
     def time_shift_audiostretchy(self, audio, speed):
-        from audiostretchy.stretch import AudioStretch
+        from audiostretchy import AudioStretch
         from torchcodec.encoders import AudioEncoder
         rate = audio['sample_rate']
         waveform = audio['waveform']
